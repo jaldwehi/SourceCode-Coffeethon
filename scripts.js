@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
       console.warn("AOS is not defined. Make sure to include the AOS library.")
     }
   
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector(".menu-toggle")
+const navMenu = document.querySelector(".nav-menu")
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active")
+})
+
     // Countdown Timer
     const countdownDate = new Date("June 1, 2025 00:00:00").getTime()
   
