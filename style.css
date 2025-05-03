@@ -497,4 +497,9 @@
       margin: 0.5rem 0;
     }
   }
-  
+  .nav-links a.active {
+  font-weight: bold;
+  color: var(--coffee-gold);
+  text-decoration: underline;
+}
+
