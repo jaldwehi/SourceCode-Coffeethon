@@ -10,18 +10,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-  <div class="container">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#problems">Problems</a></li>
-      <li><a href="#tracks">Tracks</a></li>
-      <li><a href="#audience">Audience</a></li>
-      <li><a href="#prizes">Prizes</a></li>
-      <li><a href="#sponsors">Sponsors</a></li>
-    </ul>
-  </div>
-</nav>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">Coffeethon</a>
+        <nav class="nav-menu">
+          <a href="#about">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            About
+          </a>
+          <a href="#problems">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polygon points="13 2 2 7 13 12 24 7 13 2"/><polyline points="2 17 13 22 24 17"/><polyline points="2 12 13 17 24 12"/></svg>
+            Problems
+          </a>
+          <a href="#tracks">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M12 12l9-5-9-5-9 5 9 5z"/></svg>
+            Tracks
+          </a>
+          <a href="#sponsors">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-3-3.87"/><path d="M4 21v-2a4 4 0 0 1 3-3.87"/><circle cx="12" cy="7" r="4"/></svg>
+            Sponsors
+          </a>
+          <a href="#prizes">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10l1 7H6z"/></svg>
+            Prizes
+          </a>
+        </nav>
+        
+        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+  
 
   <main>
     <!-- Hero Section -->
@@ -201,43 +221,28 @@
           <h3>Gold Sponsors</h3>
           <div class="sponsor-logos">
             <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://upload.wikimedia.org/wikipedia/ar/thumb/5/52/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%82%D9%86%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.svg/2560px-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%AA%D9%82%D9%86%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.svg.png" alt="وزارة الاتصالات وتقنية المعلومات">
             </div>
             <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://upload.wikimedia.org/wikipedia/ar/3/3a/%D8%B4%D8%B9%D8%A7%D8%B1_%D9%88%D8%B2%D8%A7%D8%B1%D8%A9_%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D8%A9_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.png" alt="وزارة الثقافة">
             </div>
             <div class="sponsor-logo">
-              <p>Your logo here</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="sponsor-tier" data-aos="fade-up" data-aos-delay="200">
-          <h3>Startup Partners</h3>
-          <div class="sponsor-logos">
-            <div class="sponsor-logo">
-              <p>Your logo here</p>
-            </div>
-            <div class="sponsor-logo">
-              <p>Your logo here</p>
-            </div>
-            <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://cdn.salla.sa/Wzwbw/LYrQ2WxRbmzX0tWvfvQAa6zEXYRp2I4eqMmOXDYL.jpg" alt="">
             </div>
           </div>
         </div>
         
         <div class="sponsor-tier" data-aos="fade-up" data-aos-delay="400">
-          <h3>Media Partners</h3>
+          <h3>Silver Partners</h3>
           <div class="sponsor-logos">
             <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://www.monshaat.gov.sa/sites/default/files/partners_image_migrate_84_1.png" alt="">
             </div>
             <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://cdn.tuwaiq.edu.sa/landing/images/logo/logo-h.png" alt="">
             </div>
             <div class="sponsor-logo">
-              <p>Your logo here</p>
+              <img src="https://agency.entasher.com/images/500_300/2024/5/Logo_cb10c20c9dbf43ff8889ffd4c05c5dde.png" alt="">
             </div>
           </div>
         </div>
@@ -272,3 +277,9 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+
+<!-- 
+
+comment : Fix Navigation Button ::
+-->
+<!-- comment : JOOD-4-Activate-Registegr-Now-Button ::fr::: -->

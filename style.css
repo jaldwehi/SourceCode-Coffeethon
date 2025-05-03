@@ -149,7 +149,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("https://source.unsplash.com/random/1920x1080/?coffee-beans");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/037/747/925/non_2x/ai-generated-falling-coffee-beans-free-png.png");
     background-size: cover;
     background-position: center;
     opacity: 0.2;
@@ -370,6 +370,11 @@
     justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+  .sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
   
   .sponsor-logo p {
     color: var(--gray-400);
@@ -502,4 +507,73 @@
   color: var(--coffee-gold);
   text-decoration: underline;
 }
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--coffee-light);
+  border-bottom: 1px solid var(--gray-200);
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--coffee-dark);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--coffee-dark);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--coffee-light);
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+main {
+  padding-top: 4.5rem; /* account for fixed header */
+}
+
 
