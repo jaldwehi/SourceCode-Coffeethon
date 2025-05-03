@@ -502,4 +502,71 @@
   color: var(--coffee-gold);
   text-decoration: underline;
 }
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--coffee-light);
+  border-bottom: 1px solid var(--gray-200);
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--coffee-dark);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  font-weight: 500;
+  color: var(--coffee-dark);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--coffee-dark);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--coffee-light);
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+main {
+  padding-top: 4.5rem; /* account for fixed header */
+}
+
 
