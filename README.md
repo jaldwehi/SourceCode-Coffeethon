@@ -33,10 +33,6 @@ This project was designed to simulate a real-world web development workflow with
 - HTML5, CSS3, JavaScript
 - Git + GitHub (Branching, Commits, Pull Requests)
 - Jira (Issue tracking, task assignments)
-- AOS (Animate on Scroll Library)
-- SVG Icons
-- Responsive Design (Custom CSS + Media Queries)
-
 ---
 
 ## 📋 Jira Integration Highlights
