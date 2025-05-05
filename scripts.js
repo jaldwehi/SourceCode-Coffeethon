@@ -90,4 +90,16 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+// FAQ toggle logic
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item")
+    item.classList.toggle("active")
+
+    // update aria-expanded for accessibility
+    const isExpanded = item.classList.contains("active")
+    button.setAttribute("aria-expanded", isExpanded)
+  })
+})
+
 
